@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+  //ข้อดาว
   int n,m=0,i,j,k;
   scanf("%d",&n);
   if(n>=1&&n<=1000)
