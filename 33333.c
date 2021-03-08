@@ -1,14 +1,20 @@
 #include<stdio.h>
 int main()
 {
-  int n,m=0,i,j=0;
+  int n,m=0,i=1,j=1,h[3]={2,3,5};
   scanf("%d",&n);
-  for(i=2;i<=n;i++)
+  m=n;
+  while(i>0)
       {
-        if(i%2==0||i%3==0||i%5==0)
+        for(j=1;j!=3;)
         {
-         j++;
+         if(m%h[j]==0)
+            {
+                m=h[j];
+            }
+         else j++;
         }
+       i++;
+
       }
-  printf("%d",j+1);
 }
